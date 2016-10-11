@@ -1,0 +1,250 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.zyWrap {
+	width: 100%;
+}
+
+.zyContent {
+	width: 100%;
+	margin-top: 61px;
+}
+
+.zyPart1 {
+	width: 100%;
+	height: 700px;
+	background: url('../imgAU/about_img.jpg') no-repeat center top;
+	text-align: center;
+	line-height: 700px;
+}
+.company-name{
+	margin-top: 270px;
+}
+.zyPart2 {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.zyPart2 h1 {
+	font-family: arial;
+	color: rgb(57, 57, 57);
+	font-size: 35px;
+}
+
+.zyPart2 p {
+	width: 500px;
+	height: 84px;
+	color: rgb(102, 102, 102);
+	font-size: 16px;
+	text-align: left;
+	display: inline-block;
+	margin-top: 40px;
+}
+
+.zyPart2 img {
+	margin-top: 40px;
+}
+
+.zyPart3 {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.zyPart3-h1,
+.zyPart4-h1,
+.zyPart5-h1 {
+	font-family: arial;
+	color: rgb(57, 57, 57);
+	font-size: 35px;
+	margin-bottom: 100px;
+}
+
+.zyPart3-1 {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.zyPart3-2 li {
+	float: left;
+}
+
+.meng {
+	background-color: rgba(204, 204, 204, 0.8);
+	width: 156px;
+	height: 155px;
+	position: absolute;
+	z-index: 1;
+	font-family: arial, "times new roman";
+	font-size: 14px;
+}
+
+.Font,
+.Font1 {
+	margin-left: -55px;
+	margin-top: 107px;
+}
+
+.blue {
+	background-color: #00BFFF;
+	width: 156px;
+	height: 155px;
+	position: absolute;
+	z-index: 2;
+	color: white;
+	display: none;
+}
+
+.blue::after {
+	content: "";
+	border-color: #00aeef;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid #00aeef;
+	position: absolute;
+	bottom: -8px;
+	left: 70px;
+}
+
+.zyPart3-4 {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.jianjie {
+	width: 1175px;
+	height: 465px;
+	background-color: gainsboro;
+	text-align: left;
+	display: none;
+}
+
+.jianjie-h1 {
+	margin-left: 684px;
+	margin-top: -389px;
+}
+
+.jianjie-h2 {
+	margin-left: 684px;
+	margin-top: 31px;
+}
+
+.jianjie-p {
+	width: 350px;
+	margin-left: 684px;
+	margin-top: 30px;
+	line-height: 30px;
+}
+
+.zyPart4 {
+	width: 100%;
+	text-align: center;
+}
+.touziren1,.touziren2{
+	width: 1200px;
+	height: 465px;
+	margin: 0 auto;
+}
+.zyPart4-1{
+	background-color: gainsboro;
+	width: 586px;
+	height: 465px;
+	text-align: left;
+}
+.zyPart4-1 h1{
+	margin-top: 100px;
+	margin-left: 100px;
+}
+.zyPart4-1 h2{
+	margin-top: 30px;
+	margin-left: 100px;
+}
+.zyPart4-1 p{
+	width: 350px;
+	margin-left: 100px;
+	margin-top: 30px;
+	line-height: 30px;
+}
+.zyPart5{
+	width: 100%;	
+	text-align: center;
+	position: relative;
+}
+.zyPart5 h1{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.zyPart5-1{
+	width: 1000px;
+	height: 778px;
+	margin-bottom: 100px;
+	background-image: url('../imgAU/map_bg.png') ;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	
+}
+.zyPart5-1-1{
+	width: 261px;
+	height: 35px;
+	position: absolute;
+	left: 26%;
+	top: 35%;
+}
+
+.zyPart5-1-2{
+	width: 261px;
+	height: 35px;
+	position: absolute;
+	left: 61%;
+	top: 36%;
+}
+.zyPart5-1-3{
+	width: 261px;
+	height: 35px;
+	position: absolute;
+	left: 62%;
+	top: 40%;
+}
+.down{
+	width: 250px;
+	font-size: 19px;
+	line-height: 20px;
+	text-align: left;
+	position: absolute;
+	left: 28%;
+	top: 39%;
+}
+.down-img{
+	display: inline-block;
+	width: 32px;
+	float: left;
+}
+.zyPart6{
+	width: 100%;
+	padding-top: 100px;
+	background: url('../imgAU/send_letter_bg.jpg') no-repeat center fixed;
+	height: 249px;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

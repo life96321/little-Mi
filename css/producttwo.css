@@ -1,0 +1,871 @@
+h1,
+h2,
+h3 {
+	font-weight: 400;
+	font-family: inherit;
+}
+/*大图滚动*/ 
+.carousel-inner {
+	position: relative;
+	width: 100%;
+	overflow: hidden
+}
+
+.carousel-inner>.item {
+	position: relative;
+	display: none;
+	-webkit-transition: .6s ease-in-out left;
+	-moz-transition: .6s ease-in-out left;
+	-o-transition: .6s ease-in-out left;
+	transition: .6s ease-in-out left
+}
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+	display: block;
+	line-height: 1
+}
+
+.carousel-inner>.active,
+.carousel-inner>.next,
+.carousel-inner>.prev {
+	display: block
+}
+
+.carousel-inner>.active {
+	left: 0
+}
+
+.carousel-inner>.next,
+.carousel-inner>.prev {
+	position: absolute;
+	top: 0;
+	width: 100%
+}
+
+.carousel-inner>.next {
+	left: 100%
+}
+
+.carousel-inner>.prev {
+	left: -100%
+}
+
+.carousel-inner>.next.left,
+.carousel-inner>.prev.right {
+	left: 0
+}
+
+.carousel-inner>.active.left {
+	left: -100%
+}
+
+.carousel-inner>.active.right {
+	left: 100%
+}
+/*左右按钮*/
+.carousel-control {
+	position: absolute;
+	top: 40%;
+	left: 15px;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	font-size: 60px;
+	font-weight: 100;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+	background: #222;
+	border-radius: 23px;
+	opacity: .5;
+	filter: alpha(opacity=50)
+}
+
+.carousel-control.right {
+	right: 15px;
+	left: auto
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+	color: #fff;
+	text-decoration: none;
+	opacity: .9;
+	filter: alpha(opacity=90)
+}
+/*分页符*/
+.carousel-indicators{
+	margin-left: -26px;
+	position: relative;
+	left: 50%;
+	bottom: 25px;
+}
+.carousel-indicators li {
+	width: 14px;
+	height: 14px;
+	margin-left: 24px;
+	background: #949494;
+	border-radius: 50%;
+	position: relative;
+	z-index: 500;
+	float: left;
+}
+.sdeno-slide .carousel-indicators li.active {
+	width: 8px;
+	height: 8px;
+	border: 3px solid black;
+}
+#sdeno-most-power .carousel-indicators{
+	bottom: 30px;
+	margin-left: -78px;
+}
+#content {
+	margin-top: 111px;
+	width: 100%;
+	overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+	#contentwrap,
+	.contentwrap {
+		width: 1170px;
+		margin: 0 auto;
+		position: relative;
+	}
+}
+
+#contentwrap {
+	position: relative;
+}
+
+.contentwrap {
+	position: relative;
+	height: auto;
+}
+
+.section {
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+}
+
+
+/*第一部分*/
+
+.one {
+	position: relative;
+	color: #3d3d3d;
+    overflow: hidden;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------*/
+/*左右按钮*/
+.sdeno-slide .carousel-control {
+	width: 81px;
+	height: 82px;
+}
+
+.carousel-control.left {
+	background: url(../img/arrow.png) 0 0 no-repeat;
+}
+
+.carousel-control.right {
+	background: url(../img/arrow.png) -81px 0 no-repeat;
+}
+/*-----------------------------------------------------------*/
+.onerun {
+	width: 100%;
+	height: 700px;
+	position: absolute;
+	float: left;
+}
+
+.onerun0 {
+	background: url(../img/sdeno_ban_bg.jpg) no-repeat center center;
+	background-size: cover;
+	top: 0;
+	left: 0;
+}
+
+.onerun1 {
+	background: url(../img/sdeno_life.jpg) no-repeat center center;
+	background-size: cover;
+	color: white;
+	line-height: 700px;
+	left: 100%;
+}
+
+.onerun1 h1 {
+	font-size: 60px;
+}
+
+.txtone {
+	width: 350px;
+	text-align: center;
+	margin: 200px 0 0 60px;
+	float: left;
+}
+
+.txtone h1 {
+	font-size: 90px;
+	font-weight: bold;
+	line-height: 120px;
+	border-bottom: 1px solid #3d3d3d;
+}
+
+.txtone p {
+	font-size: 20px;
+	line-height: 30px;
+	margin-top: 10px;
+}
+
+.oneimg0 {
+	float: right;
+}
+
+.oneimg0>img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*第二部分*/
+
+.two {
+	background-color: black;
+	color: white;
+}
+
+.twoimg {
+	float: left;
+	position: relative;
+	margin-top: 80px;
+	margin-left: 5%;
+}
+
+.twoimg .img2 {
+	width: 460px;
+}
+
+.txttwo {
+	width: 460px;
+	float: right;
+	margin-top: 200px;
+	text-align: center;
+}
+
+.txttwo h1 {
+	font-size: 46px;
+	line-height: 70px;
+}
+
+.txttwo p {
+	font-size: 20px;
+	line-height: 30px;
+	color: #D2D2D2;
+}
+
+@media (min-width: 1200px) {
+	.oneimg0 {
+		width: 570px;
+	}
+	.twoimg .img2 {
+		width: 570px;
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+	.twoimg .img1 {
+		display: none;
+	}
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+	.txtone {
+		margin: 200px 0 0 20px;
+	}
+	.oneimg0 {
+		width: 352px;
+	}
+	.twoimg .img2 {
+		width: 352px;
+		margin-left: 7%;
+	}
+	.txttwo {
+		width: 350px;
+		float: left;
+		margin-left: 25px;
+	}
+}
+
+@media (max-width: 790px) {
+	.txttwo {
+		width: 100%;
+		float: none;
+		margin-top: 20px;
+		position: absolute;
+		top: 30px;
+	}
+	.txttwo h1 {
+		font-size: 35px;
+		line-height: 60px;
+	}
+	.txttwo p {
+		line-height: 25px;
+	}
+	.twoimg {
+		float: none;
+		position: absolute;
+		top: 180px;
+		left: 50%;
+		margin-left: -175px;
+	}
+	.twoimg .img2 {
+		width: 350px;
+	}
+}
+
+@media (max-width: 767px) {
+	.txtone {
+		margin-top: 50px;
+		margin: 0 auto;
+		float: none;
+	}
+	.txtone h1 {
+		font-size: 60px;
+	}
+	.txtone p {
+		margin-top: 20px;
+		line-height: 25px;
+	}
+	.oneimg0 {
+		width: 417px;
+		float: none;
+		margin: 0 auto;
+	}
+	.onerun1 h1 {
+		font-size: 48px;
+	}
+}
+
+@media (max-width: 480px) {
+	.oneimg0 {
+		width: 385px;
+	}
+	.onerun1 h1 {
+		font-size: 35px;
+	}
+	.txttwo h1 {
+		font-size: 30px;
+		line-height: 50px;
+	}
+	.txttwo p {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.twoimg {
+		margin-left: -150px;
+	}
+	.twoimg .img2 {
+		width: 300px;
+	}
+}
+
+
+/*第三部分*/
+
+#sdeno-most-power {
+	width: 100%;
+	height: 800px;
+	background-color: white;
+	color: #3D3D3D;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid black;
+	cursor: pointer;
+    background-color: #fff;
+}
+
+.tworuns {
+	width: 100%;
+}
+.tworun{
+	width: 100%;
+	height: 800px;
+}
+
+.sdeno-animate-one {
+    background: #fff;
+    height: 800px;
+}
+.txt-left {
+	margin-top: 400px;
+	float: left;
+	padding-left: 100px;
+}
+
+.runoneimg {
+	float: right;
+	width: 531px;
+}
+
+.runoneimg img {
+	width: 100%;
+}
+
+.runthreeimg {
+	float: right;
+	width: 400px;
+	margin-right: 400px;
+}
+
+#sdeno-most-power h2 {
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom: 20px;
+	color: #000000;
+}
+
+#sdeno-most-power p,
+li {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.txt-right {
+	margin-top: 400px;
+	float: right;
+	padding-left: 100px;
+}
+
+.runtwoimg,
+.runfourimg {
+	width: 500px;
+	float: left;
+	margin-left: -200px;
+}
+
+@media (max-width: 1175px) {
+	.txt-left {
+		padding-left: 10%;
+	}
+	.runoneimg {
+		width: 460px;
+		margin-right: 7%;
+		position: relative;
+		bottom: -120px;
+	}
+	.runthreeimg {
+		margin-right: 200px;
+	}
+}
+
+@media (max-width: 960px) {
+	.txt-left {
+		width: 250px;
+		padding-left: 10%;
+		position: relative;
+		z-index: 30;
+	}
+	.runoneimg {
+		width: 352px;
+		bottom: -20px;
+	}
+	.runtwoimg,
+	.runfourimg {
+		width: 400px;
+		margin-left: -100px;
+	}
+	.runthreeimg {
+		width: 200px;
+		position: relative;
+		right: 200px;
+	}
+}
+
+@media (max-width: 960px) {
+	.runthreeimg {
+		width: 170px;
+	}
+}
+
+@media (max-width: 865px) {
+	.txt-right {
+		margin-top: -400px;
+	}
+	.runfourimg {
+		margin-left: -300px;
+	}
+	#txt-right {
+		margin-top: 400px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.txt-left {
+		width: 100%;
+		text-align: center;
+		margin-top: 60px;
+		padding-left: 0px;
+		padding-bottom: 140px;
+	}
+	.txt-right {
+		width: 100%;
+		text-align: center;
+		position: relative;
+		bottom: -20px;
+		z-index: 40;
+	}
+	#txt-right {
+		margin-top: -400px;
+	}
+	.runoneimg,
+	.runtwoimg,
+	.runthreeimg,
+	.runfourimg {
+		display: none;
+	}
+	.runimgone,
+	.runimgtwo,
+	.runimgthree,
+	.runimgfour {
+		display: block;
+		position: relative;
+		top: 400px;
+		height: 400px;
+	}
+	.runimgone {
+		background: url(../img/sdeno_ani_one_sml.jpg) no-repeat center center;
+	}
+	.runimgtwo {
+		background: url(../img/sdeno_ani_two_sml.jpg) no-repeat center center;
+	}
+	.runimgthree {
+		background: url(../img/sdeno_ani_three_sml.jpg) no-repeat center center;
+	}
+	.runimgfour {
+		background: url(../img/sdeno_ani_four_sml.jpg) no-repeat center center;
+	}
+}
+
+
+/*第四部分*/
+
+.fourimg {
+	width: 100%;
+	height: 700px;
+	margin-left: -27%;
+	float: left;
+}
+
+.img-left {
+	width: 355px;
+	float: right;
+	margin-right: 110px;
+	margin-top: -520px;
+}
+
+.img-left h1 {
+	text-align: right;
+	margin-right: 30px;
+	font-size: 46px;
+	font-weight: 700;
+	color: #000;
+	margin-bottom: 30px;
+}
+
+.img-left>ul {
+	width: 330px;
+	height: 280px;
+	margin-top: 20px;
+}
+
+.img-left>ul>li {
+	text-align: center;
+	width: 120px;
+	display: inline-block;
+	margin-top: 40px;
+	margin-left: 30px;
+}
+
+.img-left ul li img {
+	width: 50px;
+	height: 50px;
+}
+
+@media (max-width: 1170px) {
+	.fourimg {
+		margin-left: -38%;
+	}
+}
+
+@media (max-width: 960px) {
+	.fourimg {
+		margin-left: -45%;
+	}
+	.img-left {
+		position: relative;
+		z-index: 100;
+	}
+}
+
+@media (max-width: 720px) {
+	.fourimg {
+		margin-left: -60%;
+	}
+	.img-left {
+		width: 100%;
+		padding-top: 200px;
+		text-align: center;
+	}
+	.img-left ul {
+		width: 100%;
+		margin: 0;
+		margin-left: 100px;
+	}
+	.img-left li {
+		display: inline;
+	}
+	.img-left h1 {
+		font-size: 30px;
+		margin-left: 260px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 560px) {
+	.fourimg {
+		margin-left: -300px;
+		position: relative;
+		left: -260px;
+	}
+	.img-left h1 {
+		width: 140px;
+		font-size: 20px;
+	}
+}
+
+
+/*第五部分*/
+
+.five {
+	background-color: #F8F8F8;
+}
+
+.five .contentwrap {
+	height: 700px;
+	background: url(../img/most_sdeno.png) no-repeat right center;
+}
+
+.img-right {
+	margin-top: 120px;
+}
+
+.img-right h1 {
+	text-align: left;
+	margin-left: 30px;
+	font-size: 46px;
+	font-weight: 700;
+	color: #000;
+	margin-bottom: 30px;
+}
+
+.img-right>ul {
+	width: 330px;
+	margin-top: 20px;
+}
+
+.img-right>ul>li {
+	text-align: center;
+	width: 160px;
+	display: inline-block;
+	margin-top: 40px;
+}
+
+.img-right>ul>li>span {
+	width: 70px;
+	height: 70px;
+	margin: 0 auto 10px;
+	display: block;
+	background: url(../img/sdeno_fun_icon.png) no-repeat;
+}
+
+#learn-grow {
+	background-position: 0 -140px;
+}
+
+#under-emotion {
+	background-position: -70px -140px;
+}
+
+#say-assistance {
+	background-position: 0 -210px;
+}
+
+#walk-layout {
+	background-position: -70px -210px;
+}
+
+@media (max-width: 979px) {
+	.five .contentwrap {
+		width: 764px;
+	}
+	.img-right>ul {
+		width: 330px;
+		margin-top: 20px;
+		margin-left: 100px;
+	}
+}
+
+@media (max-width: 767px) {
+	.five {
+		background: #eee url(../img/most_sdeno.jpg) no-repeat center top;
+	}
+	.five .contentwrap {
+		background: 0 0;
+	}
+	.img-right {
+		margin-top: 430px;
+		float: none;
+	}
+	.img-right h1 {
+		margin-left: 0;
+		font-size: 35px;
+		line-height: 38px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	.img-right>ul {
+		width: 100%;
+		float: none;
+		margin-top: 0;
+		margin-left: 5px;
+	}
+	.img-right ul li {
+		display: inline-block;
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.img-right h1 {
+		font-size: 25px;
+		margin-right: 350px;
+	}
+	.img-right ul {
+		width: 50%;
+		margin-left: 50px;
+		padding: 0;
+	}
+	.img-right ul li {
+		width: 140px;
+		font-size: 13px;
+		line-height: 16px;
+	}
+}
+
+
+/*第六部分*/
+
+.six {
+	position: relative;
+	background: url(../img/sdeno_commercial.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+
+/*第七部分*/
+
+.seven {
+	position: relative;
+	background: url(../img/sdeno_consumer.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+#sevenwrap {
+	background-color: rgba(0, 95, 87, .7);
+}
+
+.sixwrap {
+	width: 300px;
+	height: 470px;
+	position: absolute;
+	top: 75px;
+	right: 60px;
+	padding: 20px 20px;
+	color: #fff;
+	background-color: rgba(3, 107, 128, .7);
+}
+
+.sixwrap h2 {
+	font-weight: 700;
+	font-size: 34px;
+	text-align: center;
+}
+
+.sixwrap ul {
+	padding: 0;
+	margin: 0;
+	width: 305px;
+	height: auto;
+	overflow: hidden;
+}
+
+.sixwrap ul li {
+	text-align: center;
+	vertical-align: top;
+	width: 150px;
+	overflow: hidden;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.sixwrap ul li span {
+	width: 77px;
+	height: 77px;
+	margin: 10px auto;
+	display: block;
+	background: url(../img/sdeno_more_icon.png) no-repeat;
+}
+
+#super-assi {
+	background-position: 0 0;
+}
+
+#bank-check {
+	background-position: -102px 0;
+}
+
+#museum-guide {
+	background-position: 0 -168px;
+}
+
+#ple-companion {
+	background-position: 0 -84px;
+}
+
+#camera-man {
+	background-position: -103px -84px;
+}
+
+#make-call {
+	background-position: 0 -254px;
+}
+
+#wiki-man {
+	background-position: -103px -168px;
+}
+
+@media (max-width: 979px) {
+	.sixwrap h2 {
+		line-height: 22px;
+	}
+}
+
+@media (max-width: 480px) {
+	.sixwrap {
+		right: 5px;
+	}
+}

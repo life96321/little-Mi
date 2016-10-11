@@ -1,0 +1,26 @@
+@media only screen  and (max-width: 980px) {
+	.zyPart2>h1{
+		font-size: 25px;
+	}
+	.zyPart2>p{
+		width: 300px;
+	}
+	.zyPart3-1{
+		width: 100%;
+		margin-left: 30px;
+	}
+	/*.jianjie{
+		
+	}*/
+	.jianjie img{
+		width: 585px;
+		height: 465px;
+		float: left;
+	}
+	.jianjieTxt{
+		width: 585px;
+		height: 465px;
+		float: left;
+		
+	}
+}

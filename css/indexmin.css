@@ -1,0 +1,67 @@
+/*头部*/
+#header {
+	position: absolute;
+	background-color: white;
+}
+
+#nav {
+	width: 100%;
+	height: 430px;
+	position: absolute;
+	top: 61px;
+	color: black;
+	z-index: 200;
+	overflow: hidden;
+	display: none;
+	background-color: white;
+}
+#nav>ul{
+	display: table;
+	position: relative;
+}
+#nav>ul>li{
+	display: table;
+}
+.nav-button {
+	display: block;
+}
+.expand{
+	position: relative;
+	padding-left: 40px;
+	background-color: white;
+	z-index: 1100;
+}
+.product{
+	top: 110px;
+}
+.help{
+	margin-top: 100px;
+}
+.cooperation{
+	margin-top: 70px;
+}
+.navright{
+	padding-left: 10px;
+}
+.navlast{
+	position: relative;
+	background-color: white;
+	z-index: 1100;
+}
+.navlast>div{
+	float: left;
+}
+.navlast>div>a{
+	text-align: left;
+	padding-left: 30px;
+}
+.language{
+	margin-top: 190px;
+}
+.login{
+	margin-top: 50px;
+}
+.titleone{
+	position: absolute;
+}
+

@@ -1,0 +1,386 @@
+
+/*大图滚动*/
+.carousel-inner {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.carousel-inner>.item {
+	position: relative;
+	display: none;
+	-webkit-transition: .6s ease-in-out left;
+	-moz-transition: .6s ease-in-out left;
+	-o-transition: .6s ease-in-out left;
+	transition: .6s ease-in-out left;
+}
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+	display: block;
+	line-height: 1;
+}
+
+.carousel-inner>.active,
+.carousel-inner>.next,
+.carousel-inner>.prev {
+	display: block;
+}
+
+.carousel-inner>.active {
+	left: 0;
+}
+
+.carousel-inner>.next,
+.carousel-inner>.prev {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.carousel-inner>.next {
+	left: 100%;
+}
+
+.carousel-inner>.prev {
+	left: -100%;
+}
+
+.carousel-inner>.next.left,
+.carousel-inner>.prev.right {
+	left: 0;
+}
+
+.carousel-inner>.active.left {
+	left: -100%;
+}
+
+.carousel-inner>.active.right {
+	left: 100%;
+}
+
+/*左右按钮*/
+.carousel-control {
+	position: absolute;
+	top: 40%;
+	left: 15px;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	font-size: 60px;
+	font-weight: 100;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+	background: #222;
+	border-radius: 23px;
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+
+.carousel-control {
+    height: 60px;
+    width: 60px;
+    margin-top: 0;
+    border: 0;
+    z-index: 10;
+    background-image: url(../img/new_version_icon.png);
+    background-color: transparent;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+	color: #fff;
+	text-decoration: none;
+	opacity: .9;
+	filter: alpha(opacity=90)
+}
+
+
+.carousel-control.left {
+    background-position: 0 -85px;
+}
+
+.carousel-control.right {
+    background-position: -60px -85px;
+    right: 15px;
+	left: auto;
+}
+
+/*分页符*/
+.carousel-indicators{
+	margin-left: -35px;
+	position: relative;
+	left: 50%;
+	bottom: 30px;
+}
+.carousel-indicators li {
+	width: 10px;
+	height: 10px;
+	margin-left: 24px;
+	background: #949494;
+	border-radius: 50%;
+	position: relative;
+	z-index: 500;
+	float: left;
+}
+
+.carousel-indicators li.active:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: 0 0;
+	border: 1px solid #949494;
+	display: inline-block;
+	position: absolute;
+	top: -6px;
+	left: -6px;
+	border-radius: 50%;
+}
+
+@media (min-width: 1200px) {
+	.contentwrap {
+		width: 1170px;
+		margin: 0 auto;
+		position: relative;
+	}
+}
+
+.contentwrap {
+	position: relative;
+	height: auto;
+}
+
+#content{
+	margin-top: 61px;
+	width: 100%;
+	overflow: hidden;
+}
+#content>div{
+	width: 100%;
+}
+#carousel{
+	width: 100%;
+	height: 700px;
+	text-align: center;
+	border-bottom: 1px solid black;
+	overflow: hidden;
+	position: relative;
+}
+.run-one,.run-two{
+	width: 100%;
+	height: 700px;
+}
+.run-one .img-one{
+	width: 484px;
+	height: 218px;
+	padding-top: 170px;
+	margin: 0 auto;
+}
+.run-one .img-two{
+	width: 152px;
+	height: 103px;
+	position: absolute;
+	top: 10px;
+	right: 60px;
+}
+.h1-one{
+	font-size: 60px;
+	line-height: 70px;
+	font-weight: 400;
+	margin-top: 15px;
+}
+.h1-one>span{
+	position: relative;
+	top: -30px;
+	left: 2px;
+	margin-right: 15px;
+	font-size: 25px;
+}
+.run-one>h2{
+	font-size: 40px;
+	line-height: 42px;
+	font-weight: 400;
+}
+.h3-one{
+	font-size: 25px;
+	line-height: 40px;
+	font-weight: 100;
+	margin-top: 10px;
+}
+.run-one .img-three{
+	width: 158px;
+	display: block;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+
+.run-two{
+	background-image: url(../img/slide_sdeno.jpg);
+	background-repeat:no-repeat;
+	background-position: center 20px;
+	background-size:cover;
+}
+.run-two>div{
+	padding-top: 200px;
+	margin-left: 15%;
+}
+.run-two>div>h1{
+	width: 425px;
+	height: 72px;
+	font-size: 58px;
+	font-weight: 700;
+	color: #00e3f7;
+	border-bottom: 2px solid black;
+}
+.run-two>div>h2{
+	width: 425px;
+	margin-top: 30px;
+	font-size: 40px;
+}
+.run-two>div>h3{
+	width: 425px;
+	margin-top: 60px;
+	font-size: 40px;
+}
+@media only screen and  (max-width: 890px) {
+	/*中部*/
+	.h1-one{
+		font-size: 50px;
+	}
+	.h1-one>span{
+		font-size: 22px;
+		top: -25px;
+	}
+	.run-one>h2{
+		font-size: 30px;
+	}
+	.h3-one{
+		font-size: 15px;
+	}
+	.run-two>div{
+		padding-top: 270px;
+		margin-left: 10%;
+	}
+	.run-two>div>h1{
+		width: 350px;
+		height: 50px;
+		font-size: 50px;
+		font-weight: 500;
+	}
+	.run-two>div>h2{
+		width: 350px;
+		margin-top: 30px;
+		font-size: 30px;
+	}
+	.run-two>div>h3{
+		width: 350px;
+		font-size: 30px;
+	}
+}
+@media only screen and  (max-width: 625px) {
+	.run-two{
+		background-image: url(../img/slide_sdeno.png);
+		background-size: 400px 100%;
+		background-position: center 180px;
+	}
+	.run-two>div{
+		padding-top: 10px;
+		margin-left: 20%;
+	}
+	.run-two>div>h1{
+		width: 350px;
+		height: 50px;
+		font-size: 50px;
+		font-weight: 500;
+	}
+	.run-two>div>h2{
+		width: 350px;
+		margin-top: 30px;
+		font-size: 30px;
+	}
+	.run-two>div>h3{
+		width: 350px;
+		font-size: 30px;
+	}
+}
+@media only screen and (max-width: 470px) {
+	.run-two{
+		background-image: url(../img/slide_sdeno.png);
+		background-size: 90% 100%;
+		background-position: center 180px;
+	}
+	.h1-one{
+		font-size: 35px;
+	}
+	.h1-one>span{
+		font-size: 15px;
+		top: -20px;
+	}
+	.run-one>h2{
+		font-size: 25px;
+	}
+	.run-one .img-one{
+		width: 100%;
+		height: 218px;
+	}
+	.run-two>div{
+		padding-top: 10px;
+		margin-left: 12%;
+	}
+	.run-two>div>h1{
+		width: 300px;
+		height: 45px;
+		font-size: 40px;
+		font-weight: 300;
+	}
+	.run-two>div>h2{
+		width: 300px;
+		margin-top: 20px;
+		font-size: 24px;
+	}
+	.run-two>div>h3{
+		width: 300px;
+		font-size: 40px;
+		margin-top: 35px;
+	}
+}
+.contwo,.conthree,.confour{
+	width: 100%;
+	height: 600px;
+	text-align: center;
+	overflow: hidden;
+	background-size: cover;
+	border-bottom: 1px solid black;
+}
+.contwo{
+	background-image: url(../img/index_mynt.jpg);
+}
+.conthree{
+	background-image: url(../img/index_sdeno.jpg);
+}
+.confour{
+	background-image: url(../img/index_slife.jpg);
+}
+.contwo-one{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	top: -600px;
+	background-color: rgba(0,0,0,0);
+	padding-top: 100px;
+	color: white;
+}
+.contentbg{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0;
+	background-color: black;
+	opacity: 0.3;
+}
+@media only screen and (max-width: 480px) {
+	.contwo,.conthree{
+		height: 500px;
+	}
+}
